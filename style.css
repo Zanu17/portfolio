@@ -105,12 +105,16 @@
     opacity: 0;
     animation: fadeUp 0.8s 0.4s forwards;
   }
-  .hero-name .first { display: block; }
+  .hero-name .first { 
+    display: block; 
+    font-size: clamp(75px, 7vw, 120px);
+  }
   .hero-name .last {
     display: block;
     color: transparent;
     -webkit-text-stroke: 1px var(--gold);
     font-style: italic;
+    opacity: 40%;
   }
 
   .hero-title {
@@ -559,5 +563,4 @@
     footer { padding: 24px; flex-direction: column; gap: 12px; }
     .lang-strip { flex-direction: column; padding: 40px 24px; gap: 32px; }
     .lang-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 24px; }
-
   }
