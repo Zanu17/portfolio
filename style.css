@@ -489,9 +489,9 @@
     margin-bottom: 8px;
   }
   .contact-value {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    color: var(--text);
+    font-size: 18px;
+    text-transform: lowercase;
+    color: var(--text-muted);
   }
 
   /* LANGUAGES */
