@@ -170,7 +170,6 @@
   .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
 
   .hero-right {
-    opacity: 1;
     position: relative;
     overflow: hidden;
   }
@@ -576,4 +575,5 @@
   opacity: 0.125; /* 50% opacity */
   z-index: 0;
   pointer-events: none;
+
 }
