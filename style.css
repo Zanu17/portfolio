@@ -604,6 +604,56 @@
     .lang-strip { flex-direction: column; padding: 40px 24px; gap: 32px; }
     .lang-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 24px; }
   }
+
+  @media (max-width: 600px) {
+    /* Hero name fits on screen */
+    .hero-name {
+      font-size: clamp(48px, 13vw, 72px);
+    }
+    .hero-name .first {
+      font-size: clamp(52px, 14vw, 80px);
+    }
+
+    /* Title wraps properly */
+    .hero-title {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      word-break: break-word;
+      white-space: normal;
+      margin-bottom: 28px;
+    }
+
+    /* Bio smaller */
+    .hero-bio {
+      font-size: 13px;
+      margin-bottom: 36px;
+    }
+
+    /* CTA buttons stack vertically and stay within screen */
+    .hero-cta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      width: 100%;
+    }
+    .btn-primary,
+    .btn-ghost {
+      width: 100%;
+      text-align: center;
+      padding: 14px 20px;
+      box-sizing: border-box;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+    }
+
+    /* Hero left padding tighter */
+    .hero-left {
+      padding: 90px 20px 50px;
+    }
+
+    /* Section padding */
+    section { padding: 60px 20px; }
+  }
   @media (hover: none) and (pointer: coarse) {
     body {
       cursor: auto !important;
